@@ -1,16 +1,36 @@
-import styled from '@emotion/styled';
+import React from 'react';
+import TrelloList from '../src/component/TrelloList';
+import { connect } from 'react-redux';
 
-export default function Home() {
-  return <Container>styled componet</Container>;
+class Home extends React.Component {
+  render() {
+    const { lists } = this.props;
+    return (
+      <div>
+        <h1>Home</h1>
+        <div style={styles.listContainer}>
+          {lists?.map((list, index) => (
+            <TrelloList
+              key={list.id + index}
+              title={list.title}
+              cards={list.cards}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  }
 }
 
-const Container = styled.section`
-  background-color: var(--color-purple10);
-  color: var(--color-white);
-  overflow-y: hidden;
-  padding: 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  height: 100vh;
-`;
+const styles = {
+  listContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+  },
+};
+
+const mapStateToProps = (state) => ({
+  lists: state.lists,
+});
+
+export default connect(mapStateToProps)(Home);
