@@ -1,16 +1,47 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+:root {
+  --color-purple01: #f4f5ff;
+  --color-purple02: #e8eafc;
+  --color-purple03: #d6daff;
+  --color-purple04: #bec2ff;
+  --color-purple05: #a6a5fd;
+  --color-purple06: #8f8af9;
+  --color-purple07: #8f8af9;
+  --color-purple08: #6953f1;
+  --color-purple09: #5e3dea;
+  --color-purple10: #4d27db;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  --color-green01: #e6f7ec;
+  --color-green09: #00cf58;
 
-* {
-  box-sizing: border-box;
+  --color-red: #e65052;
+  --color-red01: #ffefef;
+  --color-red02: #f5b9ba;
+
+  --color-orange: #fd7b1a;
+
+  --color-gray01: #f9f9f9;
+  --color-gray02: #f4f4f4;
+  --color-gray03: #efefef;
+  --color-gray04: #e9e9e9;
+  --color-gray05: #d7d7d7;
+  --color-gray06: #bcbcbc;
+  --color-gray07: #999999;
+  --color-gray08: #7b7b7b;
+  --color-gray09: #555555;
+  --color-gray10: #434343;
+  --color-gray11: #262626;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-blue01: #e6efff;
+  --color-blue02: #aec9ff;
+  --color-blue03: #88aeff;
+  --color-blue04: #729dff;
+  --color-blue05: #5d88f2;
+
+  --color-yellow01: #fff4d6;
+  --color-yellow02: #ffeab0;
+  --color-yellow03: #ffd56c;
+  --color-yellow04: #ffbe1c;
 }
