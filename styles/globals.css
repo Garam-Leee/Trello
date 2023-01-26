@@ -1,10 +1,4 @@
 :root {
-  --color-purple01: #f4f5ff;
-  --color-purple02: #e8eafc;
-  --color-purple03: #d6daff;
-  --color-purple04: #bec2ff;
-  --color-purple05: #a6a5fd;
-  --color-purple06: #8f8af9;
   --color-purple07: #8f8af9;
   --color-purple08: #6953f1;
   --color-purple09: #5e3dea;
@@ -40,8 +34,5 @@
   --color-blue04: #729dff;
   --color-blue05: #5d88f2;
 
-  --color-yellow01: #fff4d6;
-  --color-yellow02: #ffeab0;
-  --color-yellow03: #ffd56c;
   --color-yellow04: #ffbe1c;
 }
