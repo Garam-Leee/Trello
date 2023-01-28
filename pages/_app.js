@@ -2,8 +2,7 @@
 // import '../styles/reset.css';
 import { Provider } from 'react-redux';
 import store from '../src/store/index.js';
-function MyApp({ Component, pageProps }) {
-  console.log('stroestore');
+function MyApp({ Component, pageProps }) { 
   return (
     <Provider store={store}>
       <Component {...pageProps} />

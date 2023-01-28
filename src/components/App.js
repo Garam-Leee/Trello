@@ -15,10 +15,9 @@ function App(props) {
   const { lists } = props;
   function onDragEnd(result) {
     const { destination, source, draggableId, type } = result;
-    if (!destination) {
-      return;
-    }
-    console.log('asd', this);
+
+    if (!destination) return;
+
     props.dispatch(
       sort(
         source.droppableId,

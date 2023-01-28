@@ -23,8 +23,6 @@ const listsReducer = (state = initialState, action) => {
       };
       cardID += 1;
 
-      console.log('action received', action);
-
       const newState = state.map((list) => {
         if (list.id === action.payload.listID) {
           return {
@@ -50,8 +48,6 @@ const listsReducer = (state = initialState, action) => {
       } = action.payload;
 
       const newState = [...state];
-
-      console.log(type);
 
       // list를 이동시키는 경우
       if (type === 'list') {
